@@ -1,3 +1,9 @@
+/*
+    ====================================================
+    Typography
+    ====================================================
+*/
+
 h1, h2 {
 	color: black;
 }
@@ -17,6 +23,12 @@ p {
 	font-size: 12px;
 }
 
+/*
+    ====================================================
+    Links
+    ====================================================
+*/
+
 a {
 	font-size: 16px;
 	color: black;
@@ -26,18 +38,34 @@ a {
 a:hover {
 	color: #a9b2b9;
 }
+
+
+/*
+    ====================================================
+    Lists
+    ====================================================
 */
-div { 
-	width: 320px;
-	border: 1px solid black;
-	border-radius: 1px;
-	margin-left: 200px;
-}  
-*/
+
+
 ul {
 	list-style-type: square;
 }
 
+.menulist {
+    list-style-type: none;
+	background-color: lightblue;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menulist a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+}
+
+/*
 ol {
 	list-style-type: none;
 	margin: 0;
@@ -60,6 +88,14 @@ ol li:last-child {
 	border-bottom: none;
 }
 
+*/
+
+/*
+    ====================================================
+    Body
+    ====================================================
+*/
+
 
 .header {
 	background: lightblue;
@@ -81,6 +117,13 @@ ol li:last-child {
 .footer {
     grid-area: footer;
 }
+
+/*
+    ====================================================
+    Grid
+    ====================================================
+*/
+
 
 .grid-container {
   display: grid;
