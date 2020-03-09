@@ -26,14 +26,14 @@ a {
 a:hover {
 	color: #a9b2b9;
 }
-
+*/
 div { 
 	width: 320px;
 	border: 1px solid black;
 	border-radius: 1px;
 	margin-left: 200px;
 }  
-
+*/
 ul {
 	list-style-type: square;
 }
@@ -63,5 +63,31 @@ ol li:last-child {
 
 .header {
 	background: lightblue;
+    grid-area: header;
 }
 
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+}
