@@ -11,12 +11,10 @@ h1, h2 {
 h1 {
 	font-size: 30px;
 	text-align: center;
-	padding: 20px;
 }
 
 h2 {
 	font-size: 20px;
-	text-align: center;
 }
 
 p {
@@ -53,7 +51,6 @@ ul {
 
 .menulist {
     list-style-type: none;
-	background-color: lightblue;
     border: none;
     margin: 0;
     padding: 0;
@@ -66,29 +63,23 @@ ul {
 }
 
 /*
-ol {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 180px; 
-	background-color: lightblue;
-	border: 1px solid #555;
-	position: fixed;
-}
-
-ol li a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
-	text-align: none;
-	border-bottom: 1px solid #555;
-}
-ol li:last-child {
-	border-bottom: none;
-}
-
+    ====================================================
+    Navigation
+    ====================================================
 */
+
+.nav {
+    text-align: center;
+}
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+.nav li:last-child {
+    margin-right: 0;
+}
+
 
 /*
     ====================================================
@@ -96,26 +87,39 @@ ol li:last-child {
     ====================================================
 */
 
+body {
+    background: white;
+}
 
 .header {
-	background: lightblue;
     grid-area: header;
+    background: lightblue;
+
 }
 
-.menu {
-    grid-area: menu;
+.nav {
+    grid-area: nav;
+    background: lightblue;
+
 }
 
-.main {
-    grid-area: main;
+.left {
+    grid-area: left;
+    background: white;
+}
+
+.center {
+    grid-area: center;
 }
 
 .right {
     grid-area: right;
+    background: white;
 }
 
 .footer {
     grid-area: footer;
+    background: lightblue;
 }
 
 /*
@@ -129,8 +133,8 @@ ol li:last-child {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  grid-gap: 10px;
-  padding: 10px;
+    'nav nav nav nav nav nav'
+    'left left center center right right'
+    'footer footer footer footer footer footer';
 }
+
