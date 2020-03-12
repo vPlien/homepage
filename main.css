@@ -97,22 +97,24 @@ body {
 .nav {
     grid-area: nav;
     background: lightblue;
-
 }
 
 .left {
     grid-area: left;
     background: white;
+    margin: 0 auto;
 }
 
 .center {
     grid-area: center;
     background: white;
+    margin: 0 auto;
 }
 
 .right {
     grid-area: right;
     background: white;
+    margin: 0 auto;
 }
 
 .footer {
@@ -135,5 +137,3 @@ body {
     'left left center center right right'
     'footer footer footer footer footer footer';
 }
-
-
