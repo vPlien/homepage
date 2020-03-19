@@ -3,19 +3,36 @@
     Typography
     ====================================================
 */
-
-h1, h2 {
-	color: black;
-}
-
+	
 h1 {
 	font-size: 25px;
 	text-align: left;
+	font-family: 'Major Mono Display', monospace;
+
+
+    font-family: 'Nova Mono', monospace;
+
+
+    font-family: 'Roboto Slab', serif;
+
+
+	color: #BD93F9;
+	color: #bd93f9;
 }
 
 h2 {
 	font-size: 16px;
     text-align: center;
+	font-family: 'Major Mono Display', monospace;
+	color: #FF80BF;
+	color: #f1fb81;
+
+}
+
+h1 h2 {
+
+    font-family: 'PT Mono', monospace;
+
 }
 
 /*
@@ -26,8 +43,10 @@ h2 {
 
 a {
 	font-size: 12px;
-	color: black;
+	color: #FF80BF;
+	color: white;
 	text-decoration: none;
+	font-family: 'Roboto Mono', monospace;
 }
 
 a:hover {
@@ -83,21 +102,24 @@ ul {
     Body
     ====================================================
 */
-
+	
 body {
-    background: white;
-    font-family: 'Open Sans', sans-serif;
-    background: lightblue;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Major Mono Display', monospace;
+	background: #24202E;
+	background: #3C4556;
 }
 
 .header {
     grid-area: header;
-    background: lightblue;
+
+	color: #8be9fd;
+
+	color: #bd93f9;
 }
 
 .nav {
     grid-area: nav;
-    background: lightblue;
 }
 
 .flex-container {
@@ -108,15 +130,15 @@ body {
 }
 
 .flex-container > div {
-    background: white;
     width: 200px;
     margin: 10px;
     font-size: 12px;
+	color: #FF80BF;
+	line-height: 1.5;
 }
 
 .footer {
     grid-area: footer;
-    background: lightblue;
 }
 
 /*
