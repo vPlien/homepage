@@ -3,18 +3,30 @@
     Typography
     ====================================================
 */
-
-h1, h2 {
-	color: black;
-}
-
+	
 h1 {
 	font-size: 25px;
 	text-align: left;
+	font-family: 'PT Mono', monospace;
+	color: #bd93f9;
+	color: #FF80BF;
+	color: #8be9fd;
+
 }
 
 h2 {
 	font-size: 16px;
+    text-align: center;
+	font-family: 'PT Mono', monospace;
+	color: #FF80BF;
+	text-transform: uppercase;
+
+}
+
+h1 h2 {
+
+
+    font-family: 'PT Mono', monospace;
 }
 
 /*
@@ -25,8 +37,10 @@ h2 {
 
 a {
 	font-size: 12px;
-	color: black;
+	color: #FF80BF;
+	color: white;
 	text-decoration: none;
+	font-family: 'Roboto Mono', monospace;
 }
 
 a:hover {
@@ -82,44 +96,43 @@ ul {
     Body
     ====================================================
 */
-
+	
 body {
-    background: white;
-    font-family: 'Open Sans', sans-serif;
-    background: lightlbue;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Major Mono Display', monospace;
+	background: #24202E;
+	background: #3C4556;
 }
 
 .header {
     grid-area: header;
-    background: lightblue;
+
+	color: #8be9fd;
+
+	color: #bd93f9;
 }
 
 .nav {
     grid-area: nav;
-    background: lightblue;
 }
 
-.left {
-    grid-area: left;
-    background: white;
-    margin: 0 auto;
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.center {
-    grid-area: center;
-    background: white;
-    margin: 0 auto;
-}
-
-.right {
-    grid-area: right;
-    background: white;
-    margin: 0 auto;
+.flex-container > div {
+    width: 200px;
+    margin: 10px;
+    font-size: 12px;
+	color: #FF80BF;
+	line-height: 1.5;
 }
 
 .footer {
     grid-area: footer;
-    background: lightblue;
 }
 
 /*
