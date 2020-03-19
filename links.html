@@ -8,23 +8,27 @@
 
     <title>Home</title>
 	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" href="main.css"/> 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
 
 </head>
 
 	
 <body>
-
-    <div class="grid-container">
     
-        
         
 	   <div class="header">
 
         <ul class="nav">
             <li><a href="index.html"><h1>Home</h1></a></li>
             <li><a href="links.html"><h1>Links</h1></a></li>
+		
+		<form action="http://www.google.com/search" method="get">
+    		<input type="text" name="q"/>
+   			 <input type="submit" value="search" />
+		</form>
+
         </ul>
            
 	   </div>
@@ -63,10 +67,9 @@
     </div>
 -->
     
- 
-        <div class="left">
+    <div class="flex-container">
         
-
+            <div>
 		      <h2 id="web">Web Development</h2>
 	
 			     <ul>
@@ -82,8 +85,9 @@
 				    <li><a href="https://www.freecodecamp.org/">Freecodecamp</a></li>
 				    <li><a href="https://browsersync.io/docs/command-line">Browsersync</a></li>
 			     </ul>
-        
+            </div>
 
+            <div>
 		      <h2 id="CS">Computer Science</h2>
 
 			     <ul>
@@ -91,8 +95,9 @@
 				    <li><a href="https://www.youtube.com/playlist?list=PLhQjrBD2T381L3iZyDTxRwOBuUt6m1FnW">Harvard CS50</a></li>
 				    <li><a href="https://github.com/jwasham/coding-interview-university">Learning path</a></li>
 			     </ul>
-		
-    	
+		    </div>
+            
+            <div>
 		      <h2 id="git">Git</h2>
 
 			     <ul>
@@ -103,12 +108,9 @@
 				    <li><a href="https://github.com/miollek/Free-Git-Books">Free Git Books</a></li>
 				    <li><a href="https://initialcommit.io/blog/Learn-Git-Guidebook-For-Developers-Chapter-1">Baby Git Guidebook</a></li>
 			     </ul>
-
+            </div>
             
-        </div>
-        
-        <div class="center">
-            
+            <div>
              <h2 id="home">Smart Home</h2>
 
 			     <ul>
@@ -118,7 +120,9 @@
 				    <li><a href="https://developer.anki.com/vector/docs/api.html">Anki Vector API Reference</a></li>
 				    <li><a href="https://www.kinvert.com/anki-vector-examples-tutorials-projects-python-sdk/">Anki Vector Examples</a></li>
 			     </ul>
-
+            </div>
+                
+            <div>
 		      <h2 id="free">Free Stuff</h2>
 	
 			     <ul>
@@ -126,7 +130,9 @@
 				    <li><a href="https://github.com/ripienaar/free-for-dev">Free for Dev</a></li>
 				    <li><a href="https://education.github.com/pack/offers#">Github Education Pack</a></li>
 			     </ul>
-            
+            </div>
+        
+            <div>
              <h2 id="reddit">Reddit</h2>
 	
 			     <ul>
@@ -134,7 +140,9 @@
 				    <li><a href="https://www.reddit.com/r/learnprogramming/">r/learnprogramming</a></li>
 				    <li><a href="https://www.reddit.com/r/MechanicalKeyboards/">r/MechanicalKeyboards</a></li>
 			     </ul>
-
+            </div>
+        
+            <div>
 		      <h2 id="irc">IRC</h2>
 
 			     <ul>
@@ -142,11 +150,9 @@
 				    <li><a href="https://www.reddit.com/r/irc/comments/11svit/selfhosted_irccloudlike_service/">Selfhosted/IRCCloud-ish</a></li>
 				    <li><a href="https://wiki.znc.in/Introduction">znc</a></li>
 			     </ul>
-        </div>
+            </div>
         
-        <div class="right">
-
-        
+            <div>
 		      <h2 id="other">Other</h2>
 
 			     <ul>
@@ -182,8 +188,9 @@
                     <li><a href="https://github.com/tuvtran/project-based-learning">Project based learning</a></li>
                     <li><a href="https://github.com/PizzaPokerGuy/ultimate-coding-resources">Coding resources</a></li>
 			     </ul>
-
-        </div>
+            </div>
+        
+     </div>
 
         
         <div class="footer">
@@ -192,7 +199,6 @@
         
         </div>
         
-    </div>
     
 </body>
 
