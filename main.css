@@ -3,30 +3,26 @@
     Typography
     ====================================================
 */
-	
-h1 {
-	font-size: 25px;
-	text-align: left;
-	font-family: 'PT Mono', monospace;
-	color: #bd93f9;
-	color: #FF80BF;
-	color: #8be9fd;
 
+h1 {
+  font-size: 25px;
+  text-align: left;
+  font-family: "PT Mono", monospace;
+  color: #bd93f9;
+  color: #ff80bf;
+  color: #8be9fd;
 }
 
 h2 {
-	font-size: 16px;
-    text-align: center;
-	font-family: 'PT Mono', monospace;
-	color: #FF80BF;
-	text-transform: uppercase;
-
+  font-size: 16px;
+  text-align: center;
+  font-family: "PT Mono", monospace;
+  color: #ff80bf;
+  text-transform: uppercase;
 }
 
 h1 h2 {
-
-
-    font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
 }
 
 /*
@@ -36,17 +32,16 @@ h1 h2 {
 */
 
 a {
-	font-size: 12px;
-	color: #FF80BF;
-	color: white;
-	text-decoration: none;
-	font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  color: #ff80bf;
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
 }
 
 a:hover {
-	color: #a9b2b9;
+  color: #a9b2b9;
 }
-
 
 /*
     ====================================================
@@ -54,22 +49,21 @@ a:hover {
     ====================================================
 */
 
-
 ul {
-	list-style-type: square;
+  list-style-type: square;
 }
 
 .menulist {
-    list-style-type: none;
-    border: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menulist a {
-    display: block;
-    color: black;
-    padding: 8px 16px;
+  display: block;
+  color: black;
+  padding: 8px 16px;
 }
 
 /*
@@ -79,60 +73,56 @@ ul {
 */
 
 .nav {
-    text-align: center;
+  text-align: center;
 }
 .nav li {
-    display: inline-block;
-    margin: 0 10px;
-    vertical-align: top;
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
 }
 .nav li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
-
 
 /*
     ====================================================
     Body
     ====================================================
 */
-	
+
 body {
-    font-family: 'Roboto Mono', monospace;
-    font-family: 'Major Mono Display', monospace;
-	background: #24202E;
-	background: #3C4556;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Major Mono Display", monospace;
+  background: #24202e;
+  background: #3c4556;
 }
 
 .header {
-    grid-area: header;
-
-	color: #8be9fd;
-
-	color: #bd93f9;
+  grid-area: header;
+  color: #bd93f9;
 }
 
 .nav {
-    grid-area: nav;
+  grid-area: nav;
 }
 
 .flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .flex-container > div {
-    width: 200px;
-    margin: 10px;
-    font-size: 12px;
-	color: #FF80BF;
-	line-height: 1.5;
+  width: 200px;
+  margin: 10px;
+  font-size: 12px;
+  color: #ff80bf;
+  line-height: 1.5;
 }
 
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 /*
@@ -141,12 +131,11 @@ body {
     ====================================================
 */
 
-
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'nav nav nav nav nav nav'
-    'left left center center right right'
-    'footer footer footer footer footer footer';
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "left left center center right right"
+    "footer footer footer footer footer footer";
 }
