@@ -36,7 +36,33 @@
     <div class="flex-container">
       <div>
         <h2>Server setup</h2>
-        <p>Information</p>
+		<h3>Create droplet</h3>
+		<p>Distribution: Fedora31 x64</p>
+		<p>Plan: Standard</p>
+		<p>Datacenter region: Amsterdam</p>
+		<p>Additional options: Monitoring</p>
+		<p>Authentication: SSH keys</p>
+		<h3>Add user</h3>
+		<p># Add a new user so that you're not always in root</p>
+		<p>useradd -m -G wheel plien</p>
+		<p># Give new user a password</p>
+		<p>passwd plien</p>
+		<p># Switch from root to your new user</p>
+		<p>su plien</p>
+		<h3>Move SSH keys</h3>
+		<p># Copy the ssh keys. Sudo because you need to be in root to acces it and the dot at the end means 'here'</p>
+		<p>sudo cp /root/.ssh/authorized_keys .</p>
+		<p># Make a .ssh directory</p>
+		<p>mkdir .ssh</p>
+		<p># Move the authorized_keys to the .ssh folder</p>
+		<p>mv authorized_keys .ssh/</p>
+		<h3>Change ownership permissions and delete keys from root</h3>
+		<p># Change ownership permission to user plien and group plien</p>
+		<p>sudo chown plien:plien .ssh/authorized_keys</p>
+		<p># Make sure only plien can acess and not other users or outsiders</p>
+		<p>chmod 700 .ssh</p>
+		<p># Remove the authorized_keys file from the root account to prevent being able to ssh directly into root</p>
+		<p>rm /root/.ssh/authorized_keys</p>
       </div>
     </div>
   </body>
