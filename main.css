@@ -25,6 +25,12 @@ h1 h2 {
   font-family: "PT Mono", monospace;
 }
 
+p {
+  font-size: 12px;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
 /*
     ====================================================
     Links
@@ -130,7 +136,7 @@ body {
     Grid
     ====================================================
 */
-
+/*
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -139,3 +145,4 @@ body {
     "left left center center right right"
     "footer footer footer footer footer footer";
 }
+*/
